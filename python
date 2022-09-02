@@ -1,0 +1,11 @@
+Migrations for 'blog':
+  blog\migrations\0001_initial.py
+    - Create model Blog
+    - Create model Category
+    - Create model Comment
+    - Create model Tag
+    - Create model Reply
+    - Add field category to blog
+    - Add field likes to blog
+    - Add field tags to blog
+    - Add field user to blog
