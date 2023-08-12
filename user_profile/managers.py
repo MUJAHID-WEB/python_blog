@@ -10,7 +10,7 @@ class CustomUserManager(BaseUserManager):
         if not password:
             raise ValueError ("The password must add")
 
-        email = self.normalizeemail(email)
+        email = self.normalize_email(email)
 
         user = self.model(
             username = username,
@@ -24,9 +24,9 @@ class CustomUserManager(BaseUserManager):
         return user
 
     def create_superuser(self, username, email, password, **extra_fields):
-        extra_fields.selfdefault('is_staff', True)
-        extra_fields.selfdefault('is_superuser', True)
-        extra_fields.selfdefault('is_active', True)
+        extra_fields.setdefault('is_staff', True)
+        extra_fields.setdefault('is_superuser', True)
+        extra_fields.setdefault('is_active', True)
 
         if extra_fields.get('is_staff') is not True:
             raise ValueError("The superuser must have is_staff=True")
