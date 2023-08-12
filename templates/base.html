@@ -25,7 +25,19 @@
 
 <body>
 
-    {% include 'header.html' %} {% block content %} {% endblock content %} {% include 'footer.html' %} {% include 'scripts.html' %} {% block scripts %} {% endblock scripts %}
+    {% include 'header.html' %} 
+    
+    {% block content %} 
+    
+    {% endblock content %} 
+    
+    {% include 'footer.html' %} 
+    
+    {% include 'scripts.html' %} 
+    
+    {% block scripts %} 
+    
+    {% endblock scripts %}
 
 </body>
 

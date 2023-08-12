@@ -77,13 +77,21 @@ textarea {
     height: 180px;
 }
 
-.owl-banner {
+/* .owl-banner {
     padding: 47px !important;
-}
+} */
 
 .owl-carousel .owl-item img {
     height: 440px !important;
 }
+
+/* .owl-banner .item .item-content {
+    position: absolute !important;
+    bottom: 0px !important;
+    left: 0px !important;
+    width: 100% !important;
+    background: rgba(57, 57, 57, 0.5) !important;
+} */
 
 header {
     position: relative !important;

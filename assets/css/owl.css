@@ -184,3 +184,34 @@
   z-index: 1;
   height: 100%;
   width: 100%; }
+
+  .owl-banner .item .item-content {
+    position: absolute !important;
+    bottom: 0px !important;
+    left: 0px !important;
+    width: 100% !important;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: rgba(57, 57, 57, 0.5) !important;
+}
+
+/* .owl-banner {
+    padding: 47px !important;
+} */
+
+.owl-carousel .owl-item img {
+  height: 440px !important;
+}
+
+
+@media (max-width: 992px){
+  .owl-banner .item .item-content {
+      top: 68% !important;
+      transform: translate(-0%, -0%) !important;
+  }
+}
+
+.owl-banner .owl-nav button span {
+  background-color: rgba(57, 57, 57, 0.5) !important;
+}
