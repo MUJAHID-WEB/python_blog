@@ -296,11 +296,11 @@ header .navbar {
     position: relative;
 }
 
-.owl-banner .item .item-content {
+/* .owl-banner .item .item-content {
     position: absolute;
     bottom: 40px;
     left: 40px;
-}
+} */
 
 .owl-banner .item .item-content .meta-category span {
     color: #f48840;
@@ -373,7 +373,7 @@ header .navbar {
     display: inline-block;
     text-align: center;
     line-height: 60px;
-    background-color: rgba(250, 250, 250, 0.3);
+    /* background-color: rgba(250, 250, 250, 0.3); */
 }
 
 
@@ -1087,9 +1087,9 @@ footer p a:hover {
         text-align: center;
         width: 80%;
         left: 50%;
-        top: 50%;
+        /* top: 50%; */
         bottom: auto;
-        transform: translate(-50%, -50%);
+        /* transform: translate(-50%, -50%); */
     }
     .owl-banner .item .item-content h4 {
         font-size: 24px;
@@ -1112,3 +1112,35 @@ footer p a:hover {
         margin-top: 60px;
     }
 }
+
+
+.owl-banner .item .item-content {
+    position: absolute !important;
+    bottom: 0px !important;
+    left: 0px !important;
+    width: 100% !important;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: rgba(57, 57, 57, 0.5) !important;
+  }
+  
+  /* .owl-banner {
+      padding: 47px !important;
+  } */
+  
+  .owl-carousel .owl-item img {
+    height: 440px !important;
+  }
+  
+  
+  @media (max-width: 992px){
+    .owl-banner .item .item-content {
+        top: 68% !important;
+        transform: translate(-0%, -0%) !important;
+    }
+  }
+  
+  .owl-banner .owl-nav button span {
+    background-color: rgba(57, 57, 57, 0.5) !important;
+  }
